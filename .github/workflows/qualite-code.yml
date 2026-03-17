@@ -20,7 +20,7 @@ jobs:
           node-version: 18 
  
       - name: Installer les dépendances (ESLint, Prettier, etc.) 
-        run: "[npm install --save-dev eslint prettier]"
+        run: npm install
  
       - name: Lancer notre policier du code 
-        run: "[npm run lint]"
+        run: npm run lint
